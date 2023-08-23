@@ -1,5 +1,15 @@
-// List alla global variables (and constants) in a module path
+// Lists all global variables (and constants) in a module path
 package main
+
+/*
+
+TODO show on file with variable and consts
+TODO add file and line number
+
+TODO always show variables and constans
+TODO argument for show variables or constans
+
+*/
 
 import (
 	"flag"
@@ -14,14 +24,11 @@ import (
 
 func main() {
 	modulePath := flag.String("path", ".", "path to module")
-
 	variableAndConst := flag.Bool("varconst", false, "list global variabel and constrants")
-
 	flag.Usage = func() {
-		fmt.Println("Go Tool for listing global variables (and constans) in go module path")
+		fmt.Println("Go tool for listing global variables (and constans) in go module path")
 		flag.PrintDefaults()
 	}
-
 	flag.Parse()
 
 	files := listGoFiles(*modulePath)
