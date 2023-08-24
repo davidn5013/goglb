@@ -1,14 +1,39 @@
 # goglb 
 
-goglb list global variable and constans 
+goglb lists all global variable and constans in golang module 
+
+## Instal
+
+go install github.com/davidn5013/goglb@latest
 
 ## Usage
 
+```bash
+Go tool for listing global variables (and constans) in go module path
+  -path string
+        path to module (default ".")
+  -varconst
+        list global variabel and constrants
+```
+
 In module path run:
 
-
+```bash
+> goglb -varconst
 ```
-> goglb 
+
+```bash
+Globals in build\build.go:
+Variables:
+Version
+Time
+User
+RootPathPrefix
+Constants:
+Globals in cmd\gdu\app\app.go:
+Variables:
+Constants:
+...
 ```
 
 / David
