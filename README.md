@@ -2,7 +2,7 @@
 
 goglb lists all global variable and constans in golang module 
 
-## Instal
+## Install
 
 go install github.com/davidn5013/goglb@latest
 
@@ -35,5 +35,3 @@ Variables:
 Constants:
 ...
 ```
-
-/ David
